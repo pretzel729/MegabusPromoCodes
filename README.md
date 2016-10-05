@@ -1,4 +1,4 @@
-Fetches a $10 promocode for Megabus and saves it to a file every hour.
+Fetches a $10 promocode (stackable) for Megabus and saves it to a file every hour.
 
 A UNiDAYS account (https://megabus.myunidays.com/) is required which requires student status.
 
