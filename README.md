@@ -4,4 +4,4 @@ A UNiDAYS account (https://megabus.myunidays.com/) is required which requires st
 
 run the jar through the command line with:
 
-> java -jar MegabusPromo.jar '\e@mail.com' 'password'
+> java -jar MegabusPromo.jar 'e@mail.com' 'password'
