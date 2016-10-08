@@ -2,6 +2,6 @@ Fetches a $10 promocode (stackable) for Megabus and saves it to a file every hou
 
 A UNiDAYS account (https://megabus.myunidays.com/) is required which requires student status.
 
-run the jar through the command line with:
+run the jar through powershell in the directory of the jar with:
 
-> java -jar MegabusPromo.jar 'e@mail.com' 'password'
+> java -jar .\MegabusPromo.jar 'e@mail.com' 'password'
