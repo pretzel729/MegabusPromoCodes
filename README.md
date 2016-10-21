@@ -1,6 +1,6 @@
-Fetches a $10 promocode (stackable) for Megabus and saves it to a file every hour.
+Gets the free stackable $10 Megabus redemption promocode upon refresh and saves it to MegabusPromoCodes.txt
 
-A UNiDAYS account (https://megabus.myunidays.com/) is required which requires student status.
+A student UNiDAYS account (https://megabus.myunidays.com/) is required.
 
 run the jar through powershell (if Windows) in same directory as the jar with:
 
