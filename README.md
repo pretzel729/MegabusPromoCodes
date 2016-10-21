@@ -1,4 +1,4 @@
-Gets the free stackable $10 Megabus redemption promocode upon refresh and saves it to MegabusPromoCodes.txt
+Gets the free stackable $10 Megabus redemption promo code upon refresh and saves it to MegabusPromoCodes.txt
 
 A student UNiDAYS account (https://megabus.myunidays.com/) is required.
 
