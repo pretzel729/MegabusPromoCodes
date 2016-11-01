@@ -24,6 +24,7 @@ public class Main {
 				.header("Connection","keep-alive")
 				.header("Accept","application/json, text/javascript, */*; q=0.01")
 				.header("Origin","https://megabus.myunidays.com")
+				.header("ud-source", "megabus")
 				.userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36")
 				.referrer("https://megabus.myunidays.com/get-perk")
 				.header("Accept-Encoding","gzip, deflate, br")
@@ -44,13 +45,13 @@ public class Main {
 		formData.put("Password", args[1]);
 		formData.put("EmailAddress", args[0]);
 		formData.put("Human", "");
-		POST("https://account.myunidays.com/megabus/account/log-in");
+		POST("https://account.myunidays.com/US/en-US/account/log-in");
 		System.out.println(cookies.containsKey("auth") ? "Login successful" : "Login unsuccessful. Wrong credentials?");
 		formData.clear();
 		formData.put("forceNew", "true");
 		for (long refreshTime; cookies.containsKey("auth"); Thread.sleep(900000 + refreshTime)) {
 			try {
-				JSONObject response = new JSONObject(POST("https://access.myunidays.com/megabus/access/megabus/online"));
+				JSONObject response = POST("https://access.myunidays.com/megabus/access/megabus/online");
 				refreshTime = dateFormat.parse(response.getString("canReissueOn")).getTime() - System.currentTimeMillis();
 				System.out.println(response.getString("code"));
 				Files.write(Paths.get("./MegabusPromoCodes.txt"), (response.getString("code") + "\n").getBytes(), CREATE, APPEND);
