@@ -3,8 +3,10 @@ A student UNiDAYS account (https://megabus.myunidays.com/) is required.
 Promotion is suppose to end December 31, 2016.
 
 Current code worth: $5
+
 Current refresh period: 1 hour
-Current expiration: The following midnight (GMT/UTC)
+
+Current expiration: midnight (GMT/UTC)
 
 Run program with
 
