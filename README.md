@@ -1,3 +1,5 @@
+*Irrelavent now*
+
 Fetches the free stackable Megabus redemption promo code upon refresh and writes it to codes.txt
 A student UNiDAYS account (https://megabus.myunidays.com/) is required.
 Promotion is suppose to end December 31, 2016.
